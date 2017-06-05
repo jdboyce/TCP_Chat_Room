@@ -4,3 +4,14 @@ C:\Users\Owner\Desktop\Folders\Projects\Week 5\ChatServer\ChatClient\bin\Debug\C
 C:\Users\Owner\Desktop\Folders\Projects\Week 5\ChatServer\ChatClient\obj\Debug\ChatClient.exe
 C:\Users\Owner\Desktop\Folders\Projects\Week 5\ChatServer\ChatClient\obj\Debug\ChatClient.pdb
 C:\Users\Owner\Desktop\Folders\Projects\Week 5\ChatServer\ChatClient\obj\Debug\ChatClient.csprojResolveAssemblyReference.cache
+C:\Users\Owner\Desktop\Home\Projects\Old\Week 5\ChatServer\ChatClient\bin\Debug\ChatClient.exe.config
+C:\Users\Owner\Desktop\Home\Projects\Old\Week 5\ChatServer\ChatClient\bin\Debug\ChatClient.exe
+C:\Users\Owner\Desktop\Home\Projects\Old\Week 5\ChatServer\ChatClient\bin\Debug\ChatClient.pdb
+C:\Users\Owner\Desktop\Home\Projects\Old\Week 5\ChatServer\ChatClient\obj\Debug\ChatClient.csprojResolveAssemblyReference.cache
+C:\Users\Owner\Desktop\Home\Projects\Old\Week 5\ChatServer\ChatClient\obj\Debug\ChatClient.exe
+C:\Users\Owner\Desktop\Home\Projects\Old\Week 5\ChatServer\ChatClient\obj\Debug\ChatClient.pdb
+C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatClient\bin\Debug\ChatClient.exe.config
+C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatClient\obj\Debug\ChatClient.exe
+C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatClient\obj\Debug\ChatClient.pdb
+C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatClient\bin\Debug\ChatClient.exe
+C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatClient\bin\Debug\ChatClient.pdb

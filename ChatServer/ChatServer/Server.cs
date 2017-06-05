@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Sockets;
 using System.Net;
+using System.Linq;
 
 
 namespace ChatServer
@@ -13,7 +14,7 @@ namespace ChatServer
     {
 
         const int portNumber = 11111;
-        public IPAddress localIPParsed = IPAddress.Parse("10.2.20.50");
+        public IPAddress localIPParsed = IPAddress.Any;
         public TcpListener tcpListener;
         public Dictionary<string, TcpClient> clientDatabase;
         public Queue<string> messageQueue;
@@ -30,10 +31,31 @@ namespace ChatServer
 
         public void Run()
         {
-            Console.WriteLine("\nListening for Connection Requests...");
-            tcpListener.Start();
+            Console.WriteLine("\nThe chat server access key is: " + GetIP() + "\n\nListening for Connection Requests...");
+            try
+            {
+                tcpListener.Start();
+            }
+            catch(SocketException e)
+            {
+                Console.WriteLine(e);
+                Console.ReadKey();
+            }
             Task.Run(() => ListenForConnections());
             Task.Run(() => PrintQueue());
+        }
+
+
+        public string GetIP()
+        {
+            string localIPv4 = null;
+            string hostName = Dns.GetHostName();
+            IPAddress[] ipaddress = Dns.GetHostAddresses(hostName);
+            foreach (IPAddress ip4 in ipaddress.Where(ip => ip.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork))
+            {
+                localIPv4 = ip4.ToString();
+            }
+            return localIPv4;
         }
 
 
@@ -44,16 +66,16 @@ namespace ChatServer
                 TcpClient newClient = tcpListener.AcceptTcpClient();
                 Console.WriteLine("\nNew Connection Made");
                 Task.Run(() => LogUsername(newClient));
-        }}
+            }
+        }
         
-
 
         public void LogUsername(TcpClient client)
         {
             Console.WriteLine("\nRequesting client username...");
             try
             {
-                SendMessage(client, "\nWelcome to the chat room! Please choose a username: ");
+                SendMessage(client, "\nWelcome to the chat room! Please enter a username:");
                 string username = ReceiveMessage(client);
                 clientDatabase.Add(username, client);
                 AnnounceNewUser(username);
@@ -62,19 +84,21 @@ namespace ChatServer
             catch (Exception FailedConnection)
             {
                 client.Close();
-                logger.WriteToFile(""+FailedConnection);
+                logger.WriteToFile("" + FailedConnection);
                 Console.WriteLine("Connection to client was lost.");
-        }}
+            }
+        }
 
 
         public void AnnounceNewUser(string username)
         {
             logger.WriteToFile("User \"" + username + "\" has joined the chat room.");
-            Console.WriteLine("\nUsername {0} has been saved.", username);
+            Console.WriteLine("\nUsername \"{0}\" has been saved.", username);
             foreach (var client in clientDatabase)
             {
-                SendMessage(client.Value, "\n" + username + " has joined the chat room.");
-        }}
+                SendMessage(client.Value, username + "* has joined the chat room.");
+            }
+        }
 
 
         public void ListenForMessages(string username, TcpClient client)
@@ -83,7 +107,7 @@ namespace ChatServer
             {
                 try
                 {
-                    string chatMessage = "\n" + username + ": " + ReceiveMessage(client) + "\n";
+                    string chatMessage = username + "@: " + ReceiveMessage(client);
                     Console.WriteLine("\nReceived message from {0}", username);
                     messageQueue.Enqueue(chatMessage);
                 }
@@ -97,7 +121,9 @@ namespace ChatServer
                     string clientDisconnected = username + " has left the chat room.";
                     messageQueue.Enqueue(clientDisconnected);
                     break;
-        }}}
+                }
+            }
+        }
 
 
         public string ReceiveMessage(TcpClient client)
@@ -118,7 +144,8 @@ namespace ChatServer
                 {
                     BroadcastMessage(messageQueue.Dequeue());
                 }
-            }}
+            }
+        }
        
 
         public void BroadcastMessage(string message)
@@ -131,7 +158,8 @@ namespace ChatServer
                     SendMessage(client.Value, message);
                     Console.WriteLine("\nMessage sent to: {0}", client.Key);
                 }
-            }}
+            }
+        }
     
 
         public void SendMessage(TcpClient client, string text)

@@ -22,6 +22,8 @@ namespace ChatClient
                 {
                     Console.WriteLine("\nSearching for connection...");
                     Thread.Sleep(2000);
-        }}}
+                }
+            }
+        }
     }
 }
