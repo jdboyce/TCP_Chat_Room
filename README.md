@@ -6,3 +6,4 @@ This project was a real turning point for me as I had previously never heard of 
 
 See a video demo of the project at: http://boyceportfolio.com/projects.html
 
+![alt text](https://github.com/jdboyce/TCP_Chat_Room/blob/master/ChatServer/GitHub_Cover.png)
