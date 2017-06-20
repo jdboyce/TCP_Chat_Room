@@ -1128,3 +1128,221 @@ Your Dad: yeah this sucks
 6/5/2017 5:49:40 PM - One Bad Bitch has left the chat room.
 
 6/5/2017 5:49:59 PM - Poop@: Oh shit!! One bad bitch has left!!!
+
+6/7/2017 5:00:15 PM - User "Boyce" has joined the chat room.
+
+6/7/2017 5:00:31 PM - Boyce@: Hey guys!
+
+6/7/2017 5:00:59 PM - User "Boyce" has left the chat room.
+
+6/7/2017 5:00:59 PM - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at ChatServer.ChatServer.ReceiveMessage(TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 133
+   at ChatServer.ChatServer.ListenForMessages(String username, TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 110
+
+6/7/2017 5:06:03 PM - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at ChatServer.ChatServer.ReceiveMessage(TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 133
+   at ChatServer.ChatServer.LogUsername(TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 79
+
+6/8/2017 12:38:40 PM - User "Boyce" has joined the chat room.
+
+6/8/2017 12:38:57 PM - Boyce@: Hello... is anyone there?
+
+6/8/2017 12:39:08 PM - Boyce@: I'll take that as a no....
+
+6/8/2017 12:39:20 PM - User "Josh" has joined the chat room.
+
+6/8/2017 12:39:30 PM - Josh@: Yo
+
+6/8/2017 12:39:40 PM - Boyce@: HEY!
+
+6/8/2017 12:39:48 PM - User "Bob" has joined the chat room.
+
+6/8/2017 12:39:55 PM - Bob@: Wassup guys!!
+
+6/8/2017 12:40:15 PM - Bob@: Okay I'm done, bye
+
+6/8/2017 12:40:16 PM - User "Bob" has left the chat room.
+
+6/8/2017 12:40:16 PM - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at ChatServer.ChatServer.ReceiveMessage(TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 133
+   at ChatServer.ChatServer.ListenForMessages(String username, TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 110
+
+6/8/2017 12:40:16 PM - Bob has left the chat room.
+
+6/13/2017 2:00:47 PM - User "Boyce" has joined the chat room.
+
+6/13/2017 2:01:13 PM - Boyce@: Hello world!
+
+6/13/2017 2:04:04 PM - User "Josh" has joined the chat room.
+
+6/13/2017 2:04:08 PM - Josh@: Anyone home?
+
+6/13/2017 2:04:40 PM - Boyce@: Hey Josh!
+
+6/13/2017 2:04:51 PM - Josh@: Wassup Boyce!
+
+6/13/2017 2:05:11 PM - User "Bob" has joined the chat room.
+
+6/13/2017 2:05:15 PM - Bob@: Bob is in the house.
+
+6/13/2017 2:05:27 PM - Josh@: wassup Bob
+
+6/13/2017 2:05:47 PM - Boyce@: Let's get tacos
+
+6/16/2017 3:06:29 PM - User "Bob" has left the chat room.
+
+6/16/2017 3:06:30 PM - User "Josh" has left the chat room.
+
+6/16/2017 3:06:34 PM - System.IO.IOException: Unable to read data from the transport connection: An established connection was aborted by the software in your host machine. ---> System.Net.Sockets.SocketException: An established connection was aborted by the software in your host machine
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at ChatServer.ChatServer.ReceiveMessage(TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 132
+   at ChatServer.ChatServer.ListenForMessages(String username, TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 109
+
+6/13/2017 3:40:14 PM - User "Boyce" has joined the chat room.
+
+6/13/2017 3:40:20 PM - User "Bob" has joined the chat room.
+
+6/13/2017 3:57:26 PM - Bob@: poop
+
+6/13/2017 3:57:32 PM - Boyce@: barf
+
+6/13/2017 3:57:35 PM - User "Boyce" has left the chat room.
+
+6/13/2017 3:57:35 PM - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at ChatServer.ChatServer.ReceiveMessage(TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 132
+   at ChatServer.ChatServer.ListenForMessages(String username, TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 109
+
+6/13/2017 3:57:35 PM - Boyce has left the chat room.
+
+6/13/2017 5:07:45 PM - User "Boyce" has joined the chat room.
+
+6/13/2017 5:08:00 PM - User "Boyce" has left the chat room.
+
+6/13/2017 5:08:00 PM - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at ChatServer.ChatServer.ReceiveMessage(TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 132
+   at ChatServer.ChatServer.ListenForMessages(String username, TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 109
+
+6/13/2017 5:09:08 PM - User "Boyce" has joined the chat room.
+
+6/13/2017 5:09:29 PM - Boyce@: Hello world!
+
+6/13/2017 5:09:41 PM - User "Josh" has joined the chat room.
+
+6/13/2017 5:09:46 PM - Josh@: Anyone home?
+
+6/13/2017 5:09:57 PM - User "Bob" has joined the chat room.
+
+6/13/2017 5:10:04 PM - Bob@: Bob is in the house.
+
+6/13/2017 5:13:50 PM - User "Boyce" has joined the chat room.
+
+6/13/2017 5:14:10 PM - Boyce@: Hello world!
+
+6/13/2017 5:14:24 PM - User "Josh" has joined the chat room.
+
+6/13/2017 5:14:29 PM - Josh@: Anyone home?
+
+6/13/2017 5:14:39 PM - User "Bob" has joined the chat room.
+
+6/13/2017 5:14:45 PM - Bob@: Bob is in the house.
+
+6/13/2017 5:14:59 PM - Boyce@: Let's get tacos
+
+6/13/2017 5:15:34 PM - User "Boyce" has left the chat room.
+
+6/13/2017 5:15:34 PM - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at ChatServer.ChatServer.ReceiveMessage(TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 132
+   at ChatServer.ChatServer.ListenForMessages(String username, TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 109
+
+6/13/2017 5:15:34 PM - Boyce has left the chat room.
+
+6/13/2017 5:15:35 PM - User "Bob" has left the chat room.
+
+6/13/2017 5:15:35 PM - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at ChatServer.ChatServer.ReceiveMessage(TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 132
+   at ChatServer.ChatServer.ListenForMessages(String username, TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 109
+
+6/13/2017 5:15:35 PM - Bob has left the chat room.
+
+6/13/2017 5:15:35 PM - User "Josh" has left the chat room.
+
+6/13/2017 5:15:35 PM - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at ChatServer.ChatServer.ReceiveMessage(TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 132
+   at ChatServer.ChatServer.ListenForMessages(String username, TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 109
+
+6/13/2017 5:16:30 PM - User "Boyce" has joined the chat room.
+
+6/13/2017 5:16:50 PM - Boyce@: Hello world!
+
+6/13/2017 5:17:01 PM - User "Josh" has joined the chat room.
+
+6/13/2017 5:17:08 PM - Josh@: Hey boys!
+
+6/13/2017 5:17:14 PM - User "Bob" has joined the chat room.
+
+6/13/2017 5:17:20 PM - Bob@: Bob is in the house.
+
+6/13/2017 5:17:32 PM - Josh@: Wassup Bob
+
+6/13/2017 5:17:40 PM - Boyce@: Boyce wants tacos. TACOS
+
+6/13/2017 7:18:35 PM - User "Boyce" has left the chat room.
+
+6/13/2017 7:18:35 PM - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at ChatServer.ChatServer.ReceiveMessage(TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 132
+   at ChatServer.ChatServer.ListenForMessages(String username, TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 109
+
+6/13/2017 7:18:35 PM - Boyce has left the chat room.
+
+6/13/2017 7:18:46 PM - User "Josh" has left the chat room.
+
+6/13/2017 7:18:46 PM - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at ChatServer.ChatServer.ReceiveMessage(TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 132
+   at ChatServer.ChatServer.ListenForMessages(String username, TcpClient client) in C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\Server.cs:line 109
+
+6/13/2017 7:18:46 PM - Josh has left the chat room.
+
+6/13/2017 7:18:53 PM - Bob@: noooooooo

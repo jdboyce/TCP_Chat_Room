@@ -14,3 +14,4 @@ C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\ob
 C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\obj\Debug\ChatServer.pdb
 C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\bin\Debug\ChatServer.exe
 C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\bin\Debug\ChatServer.pdb
+C:\Users\Owner\Desktop\Home\Projects\Weeks 1 - 9\Week 5\ChatServer\ChatServer\obj\Debug\ChatServer.csprojResolveAssemblyReference.cache
