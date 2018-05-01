@@ -95,7 +95,7 @@ namespace ChatServer
             Console.WriteLine("\nUsername \"{0}\" has been saved.", username);
             foreach (var client in clientDatabase)
             {
-                SendMessage(client.Value, username + "* has joined the chat room.");   /* ^ */
+                SendMessage(client.Value, username + "* has joined the chat room.");    /* ^ */
             }
         }
 
@@ -115,8 +115,7 @@ namespace ChatServer
                     client.Close();
                     clientDatabase.Remove(username);
                     logger.WriteToFile("User \"" + username + "\" has left the chat room.");
-                    logger.WriteToFile(""+FailedConnection);
-                    Console.WriteLine("\n" + username + " has left the chat room.");
+                    logger.WriteToFile(""+FailedConnection);                                       Console.WriteLine("\n" + username + " has left the chat room.");
                     string clientDisconnected = username + " has left the chat room.";
                     messageQueue.Enqueue(clientDisconnected);
                     break;
@@ -124,18 +123,55 @@ namespace ChatServer
             }
         }
 
-
-        public string ReceiveMessage(TcpClient client)   /* 6 */
+        public string ReceiveMessage(TcpClient client)                                                                      /* 6 */
         {
                 NetworkStream reader = client.GetStream();
                 byte[] buffer = new byte[client.ReceiveBufferSize];
                 int bytesRead = reader.Read(buffer, 0, client.ReceiveBufferSize);
                 string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-                return message;   /* ^ */
+                return message;                                                                                                              /* ^ */
+        }
+        
+        public void BroadcastMessage(string message)                                                                         /* 8 */
+        {
+            if (clientDatabase.Count > 0)
+            {
+                logger.WriteToFile(message);
+                foreach (var storedClient in clientDatabase)
+                {
+                    SendMessage(storedClient.Value, message);                                                              /* 9 > */
+                    Console.WriteLine("\nMessage sent to: {0}", storedClient.Key);
+                }
+            }
         }
 
 
-        public void PrintQueue()   /* 7 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+public void PrintQueue()                                                                                                                      /* 7 */
         {
             while (true)
             {
@@ -145,20 +181,23 @@ namespace ChatServer
                 }
             }
         }
-       
 
-        public void BroadcastMessage(string message)   /* 8 */
-        {
-            if (clientDatabase.Count > 0)
-            {
-                logger.WriteToFile(message);
-                foreach (var client in clientDatabase)
-                {
-                    SendMessage(client.Value, message);   /* 9 > */
-                    Console.WriteLine("\nMessage sent to: {0}", client.Key);
-                }
-            }
-        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         public void SendMessage(TcpClient client, string text)  /* 10 */
@@ -171,3 +210,9 @@ namespace ChatServer
         }
     }
 }
+
+
+
+
+
+client
